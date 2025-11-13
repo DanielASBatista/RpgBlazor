@@ -1,5 +1,4 @@
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
 using System.Text.Json;
 using RpgBlazor.Models;
 
@@ -15,19 +14,23 @@ namespace RpgBlazor.Services
         }
 
         // Método chamado pelo Login.razor
-        public async Task<UsuarioViewModel> AutenticarUsuario(UsuarioViewModel usuario)
+        public async Task<UsuarioViewModel> AutenticarAsync(UsuarioViewModel usuario)
         {
-            var resposta = await _http.PostAsJsonAsync("usuarios/login", usuario);
+            var content = new StringContent(JsonSerializer.Serialize(usuario));
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
-            if (!resposta.IsSuccessStatusCode)
-                throw new Exception("Falha ao autenticar usuário.");
+            var response = await _http.PostAsync("usuarios/autenticar",content);
+            var responseContent = await response.Content.ReadAsStringAsync();
 
-            var usuarioRetorno = await resposta.Content.ReadFromJsonAsync<UsuarioViewModel>();
-
-            if (usuarioRetorno == null)
-                throw new Exception("Erro ao processar retorno da API.");
-
-            return usuarioRetorno;
+            if (response.IsSuccessStatusCode)
+            {
+                usuario = JsonSerializer.Deserialize<UsuarioViewModel>(responseContent, JsonSerializerOptions.Web);
+                return usuario;
+            }
+            else
+            {
+                throw new Exception(responseContent);
+            }
         }
         public async Task<UsuarioViewModel> RegistrarAsync(UsuarioViewModel usuario)
 {

@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ETEC\\2DS\\DS\\RPGblazror\\RpgBlazor\\rpgblazor.csproj": {}
+    "D:\\Repositórios\\VisualStudioCode\\RpgBlazor\\rpgblazor\\rpgblazor.csproj": {}
   },
   "projects": {
-    "E:\\ETEC\\2DS\\DS\\RPGblazror\\RpgBlazor\\rpgblazor.csproj": {
+    "D:\\Repositórios\\VisualStudioCode\\RpgBlazor\\rpgblazor\\rpgblazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ETEC\\2DS\\DS\\RPGblazror\\RpgBlazor\\rpgblazor.csproj",
+        "projectUniqueName": "D:\\Repositórios\\VisualStudioCode\\RpgBlazor\\rpgblazor\\rpgblazor.csproj",
         "projectName": "rpgblazor",
-        "projectPath": "E:\\ETEC\\2DS\\DS\\RPGblazror\\RpgBlazor\\rpgblazor.csproj",
-        "packagesPath": "C:\\Users\\I\\.nuget\\packages\\",
-        "outputPath": "E:\\ETEC\\2DS\\DS\\RPGblazror\\RpgBlazor\\obj\\",
+        "projectPath": "D:\\Repositórios\\VisualStudioCode\\RpgBlazor\\rpgblazor\\rpgblazor.csproj",
+        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositórios\\VisualStudioCode\\RpgBlazor\\rpgblazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\I\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

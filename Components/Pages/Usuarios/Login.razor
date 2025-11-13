@@ -44,11 +44,10 @@ else if (!string.IsNullOrEmpty(mensagemErro))
     {
         try
         {
-            var usuarioRetorno = await UsuarioService.AutenticarUsuario(usuario);
+            var usuarioRetorno= await UsuarioService.AutenticarAsync(usuario);
             if(!string.IsNullOrEmpty(usuarioRetorno.Token)){
                 mensagem = "Login realizado com sucesso.";
-                await LocalStorage.SetItemAsync("usuarioToken", usuarioRetorno.Token);
-                /**/
+                await LocalStorage.SetItemAsync("UsuarioToken", usuarioRetorno.Token);
             }
         }
         catch(Exception ex)
