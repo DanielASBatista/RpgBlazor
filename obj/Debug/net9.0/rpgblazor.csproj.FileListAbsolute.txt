@@ -157,3 +157,4 @@ E:\ETEC\2DS\DS\RPGblazror\RpgBlazor\obj\Debug\net9.0\ref\rpgblazor.dll
 E:\ETEC\2DS\DS\RPGblazror\RpgBlazor\bin\Debug\net9.0\Blazored.LocalStorage.dll
 E:\ETEC\2DS\DS\RPGblazror\RpgBlazor\obj\Debug\net9.0\rpgblazor.csproj.AssemblyReference.cache
 E:\ETEC\2DS\DS\RPGblazror\RpgBlazor\obj\Debug\net9.0\rpgblazor.csproj.Up2Date
+E:\ETEC\2DS\DS\RPGblazror\RpgBlazor\obj\Debug\net9.0\rpgblazor.sourcelink.json

@@ -15,6 +15,6 @@ namespace RpgBlazor.Models
         public string PasswordString { get; set; } = string.Empty;
 
         // adiciona campo para o token de retorno
-        public string? Token { get; set; }
+        public string? Token { get; set; } = string.Empty;
     }
 }
