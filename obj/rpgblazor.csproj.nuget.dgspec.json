@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repositórios\\VisualStudioCode\\RpgBlazor\\rpgblazor\\rpgblazor.csproj": {}
+    "C:\\Users\\etechas\\Desktop\\CLONE\\RpgBlazor\\rpgblazor.csproj": {}
   },
   "projects": {
-    "D:\\Repositórios\\VisualStudioCode\\RpgBlazor\\rpgblazor\\rpgblazor.csproj": {
+    "C:\\Users\\etechas\\Desktop\\CLONE\\RpgBlazor\\rpgblazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositórios\\VisualStudioCode\\RpgBlazor\\rpgblazor\\rpgblazor.csproj",
+        "projectUniqueName": "C:\\Users\\etechas\\Desktop\\CLONE\\RpgBlazor\\rpgblazor.csproj",
         "projectName": "rpgblazor",
-        "projectPath": "D:\\Repositórios\\VisualStudioCode\\RpgBlazor\\rpgblazor\\rpgblazor.csproj",
-        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositórios\\VisualStudioCode\\RpgBlazor\\rpgblazor\\obj\\",
+        "projectPath": "C:\\Users\\etechas\\Desktop\\CLONE\\RpgBlazor\\rpgblazor.csproj",
+        "packagesPath": "D:\\NugetPackages",
+        "outputPath": "C:\\Users\\etechas\\Desktop\\CLONE\\RpgBlazor\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\etechas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -39,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -69,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
