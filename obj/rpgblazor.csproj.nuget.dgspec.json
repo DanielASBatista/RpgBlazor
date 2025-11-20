@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\etechas\\Desktop\\CLONE\\RpgBlazor\\rpgblazor.csproj": {}
+    "C:\\Users\\etechas\\Desktop\\clone\\RpgBlazor\\rpgblazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\etechas\\Desktop\\CLONE\\RpgBlazor\\rpgblazor.csproj": {
+    "C:\\Users\\etechas\\Desktop\\clone\\RpgBlazor\\rpgblazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\etechas\\Desktop\\CLONE\\RpgBlazor\\rpgblazor.csproj",
+        "projectUniqueName": "C:\\Users\\etechas\\Desktop\\clone\\RpgBlazor\\rpgblazor.csproj",
         "projectName": "rpgblazor",
-        "projectPath": "C:\\Users\\etechas\\Desktop\\CLONE\\RpgBlazor\\rpgblazor.csproj",
+        "projectPath": "C:\\Users\\etechas\\Desktop\\clone\\RpgBlazor\\rpgblazor.csproj",
         "packagesPath": "D:\\NugetPackages",
-        "outputPath": "C:\\Users\\etechas\\Desktop\\CLONE\\RpgBlazor\\obj\\",
+        "outputPath": "C:\\Users\\etechas\\Desktop\\clone\\RpgBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

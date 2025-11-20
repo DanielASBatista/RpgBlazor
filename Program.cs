@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped(sp => new HttpClient
 {
-    BaseAddress = new Uri("https://danielhernanrpgapi.azurewebsites.net/")
+    BaseAddress = new Uri("https://rpgapids20252.azurewebsites.net/")
 });
 
 builder.Services.AddScoped<UsuarioService>();

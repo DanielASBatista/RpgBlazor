@@ -2,6 +2,7 @@
 @rendermode InteractiveServer
 @inject RpgBlazor.Services.PersonagemService PersonagemService
 @inject ILocalStorageService LocalStorage
+@inject NavigationManager Navigation
 @using RpgBlazor.Models
 @using Blazored.LocalStorage;
 @if (!string.IsNullOrEmpty(mensagem))
@@ -35,6 +36,7 @@ else
                 <th>Disputas</th>
                 <th>Vitórias</th>
                 <th>Derroas</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -48,6 +50,11 @@ else
                     <td>@personagem.Disputas</td>
                     <td>@personagem.Vitorias</td>
                     <td>@personagem.Derrotas</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm" @onclick="() => EditarPersonagem(personagem.Id)">
+                            <i class="bi bi-pencil"></i> Editar
+                        </button>
+                    </td>
                 </tr>    
             }
         </tbody>
@@ -60,25 +67,29 @@ else
     private string mensagem = string.Empty;
     private string mensagemErro = string.Empty;
 
-    private async Task CarregarPersonagens()
-    {
-        var token = await LocalStorage.GetItemAsync<string>("UsuarioToken");
-        lista = await PersonagemService.GetAllAsync(token);
-    }
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         try
         {
-            if(firstRender)
-            await CarregarPersonagens();
+            if (firstRender)
+            {
+                await CarregarPersonagens();
+                StateHasChanged();
+            }
         }
         catch (Exception ex)
         {
             mensagemErro = ex.Message;
         }
-        finally
-        {
-            StateHasChanged();
-        }
+    }
+
+    private async Task CarregarPersonagens()
+    {
+        var token = await LocalStorage.GetItemAsync<string>("UsuarioToken");
+        lista = await PersonagemService.GetAllAsync(token);
+    }
+    private void EditarPersonagem(int id)
+    {
+        Navigation.NavigateTo($"/personagens/cadastro/{id}");
     }
 }

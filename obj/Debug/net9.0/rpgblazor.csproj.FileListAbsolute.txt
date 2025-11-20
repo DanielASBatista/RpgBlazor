@@ -323,3 +323,4 @@ C:\Users\etechas\Desktop\CLONE\RpgBlazor\obj\Debug\net9.0\refint\rpgblazor.dll
 C:\Users\etechas\Desktop\CLONE\RpgBlazor\obj\Debug\net9.0\rpgblazor.pdb
 C:\Users\etechas\Desktop\CLONE\RpgBlazor\obj\Debug\net9.0\rpgblazor.genruntimeconfig.cache
 C:\Users\etechas\Desktop\CLONE\RpgBlazor\obj\Debug\net9.0\ref\rpgblazor.dll
+C:\Users\etechas\Desktop\clone\RpgBlazor\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
